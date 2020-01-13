@@ -193,3 +193,96 @@
   color: white;
   border-right-style: none;
 }
+
+/* ==================================
+    ANIMATIONS BUTTONS
+====================================*/
+.animated-button-1 {
+  position: relative;
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 1.4rem;
+  background-color: #00b3b4;
+
+  /* Image */
+  background-image: url(pattern.png);
+  background-size: 40px 40px;
+  border: 1px solid #555;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.animated-button-1:hover {
+  animation: loading-animation-button 2s linear infinite;
+}
+
+/* Keyframe Image Animation */
+@keyframes loading-animation-button {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 40px 0;
+  }
+}
+
+.animated-button-2 {
+  position: relative;
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 1.4rem;
+  background-color: #00b3b4;
+  background-size: 40px 40px;
+  border: 1px solid #555;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.animated-button-2::after {
+  content: ">>";
+  position: absolute;
+  top: 30%;
+  right: 0.6em;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  /* color: white; */
+}
+
+.animated-button-2:hover {
+  padding: 20px 60px 20px 20px;
+}
+
+.animated-button-2:hover::after {
+  right: 1.2em;
+  opacity: 1;
+}
+
+/* ==================================
+    TOOGLE SWITCH UI BUTTONS
+====================================*/
+.toggle-1 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 0 0;
+}
+
+.toggle-1__input {
+  display: none;
+}
+
+.toggle-1__button {
+  position: relative;
+  display: inline-block;
+  font-size: 1.4rem;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #f2395a;
+  border: solid 1px #f2395a;
+  color: white;
+  width: 80px;
+  height: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
