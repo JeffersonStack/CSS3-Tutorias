@@ -1,0 +1,14 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+.shadow-typo {
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #00b4b3;
+  font-family: "Bubblegum Sans", cursive;
+  text-shadow: 3px 3px 0 #e7eef1, 8px 8px 0px rgba(0, 0, 0, 0.1);
+}
